@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="i9R-vM-DeB" customClass="ProductListCell" customModule="CyMovie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="188" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="188" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hyk-zW-fKB">
+                        <rect key="frame" x="0.0" y="0.0" width="188" height="263"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Hyk-zW-fKB" secondAttribute="height" multiplier="1:1.4" id="hJU-Cp-i9R"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOJ-rp-8S7" userLabel="lblTitle">
+                        <rect key="frame" x="10" y="268" width="168" height="20"/>
+                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0eE-pE-z5r" userLabel="imgBadge">
+                        <rect key="frame" x="154.5" y="229.5" width="33.5" height="33.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="0eE-pE-z5r" secondAttribute="height" multiplier="1:1" id="oaM-i7-AaI"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="Mpx-Rd-tuZ"/>
+            <constraints>
+                <constraint firstItem="eOJ-rp-8S7" firstAttribute="top" secondItem="Hyk-zW-fKB" secondAttribute="bottom" constant="5" id="7UI-AM-iqc"/>
+                <constraint firstItem="eOJ-rp-8S7" firstAttribute="leading" secondItem="Mpx-Rd-tuZ" secondAttribute="leading" constant="10" id="BXW-Nk-fP1"/>
+                <constraint firstItem="0eE-pE-z5r" firstAttribute="width" secondItem="Hyk-zW-fKB" secondAttribute="height" multiplier="12:94" id="CCL-wS-0QK"/>
+                <constraint firstItem="0eE-pE-z5r" firstAttribute="trailing" secondItem="Hyk-zW-fKB" secondAttribute="trailing" id="CqC-8f-97g"/>
+                <constraint firstAttribute="trailing" secondItem="Hyk-zW-fKB" secondAttribute="trailing" id="NYq-ky-Qg6"/>
+                <constraint firstItem="Hyk-zW-fKB" firstAttribute="leading" secondItem="i9R-vM-DeB" secondAttribute="leading" id="YXa-Ta-FKC"/>
+                <constraint firstItem="Hyk-zW-fKB" firstAttribute="top" secondItem="i9R-vM-DeB" secondAttribute="top" id="fnp-bn-aXt"/>
+                <constraint firstItem="Mpx-Rd-tuZ" firstAttribute="trailing" secondItem="eOJ-rp-8S7" secondAttribute="trailing" constant="10" id="fqj-yE-g21"/>
+                <constraint firstItem="Mpx-Rd-tuZ" firstAttribute="bottom" secondItem="eOJ-rp-8S7" secondAttribute="bottom" constant="12" id="i0H-qi-J48"/>
+                <constraint firstItem="0eE-pE-z5r" firstAttribute="bottom" secondItem="Hyk-zW-fKB" secondAttribute="bottom" id="rwn-Oi-ykw"/>
+            </constraints>
+            <size key="customSize" width="261" height="464"/>
+            <connections>
+                <outlet property="imgBadge" destination="0eE-pE-z5r" id="RVQ-sf-Xt1"/>
+                <outlet property="imgProduct" destination="Hyk-zW-fKB" id="o1t-8i-tz5"/>
+                <outlet property="lblTitle" destination="eOJ-rp-8S7" id="RYj-af-QUU"/>
+            </connections>
+            <point key="canvasLocation" x="4.3478260869565224" y="140.625"/>
+        </collectionViewCell>
+    </objects>
+</document>
